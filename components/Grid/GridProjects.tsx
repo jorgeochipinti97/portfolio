@@ -11,28 +11,22 @@ interface Props {
 const GridProjects: FC<Props> = ({ projects }) => {
     return (
         <>
-            <Box display='flex' justifyContent='center'>
-            <Box>
+
+            <Box display='flex' justifyContent='center' sx={{ flexWrap: 'wrap' }}>
+
+                {
+                    projects.map(e => (
+
+                        <Box>
+                            <CardProjects project={e} />
+                        </Box>
 
 
-                <Grid container spacing={1}>
-                    {
-                        projects.map(e => (
-                            <Grid item
-                                xs={10}
-                                sm={4}
-                                key={e.title}
-                            >
-                                <Box display='flex' justifyContent='center'>
-                                    <Box>
-                                        <CardProjects project={e} />
-                                    </Box>
-                                </Box>
-                            </Grid>
-                        ))
-                    }
-                </Grid>
-            </Box>
+                    ))
+                }
+
+
+
             </Box>
         </>
     )
