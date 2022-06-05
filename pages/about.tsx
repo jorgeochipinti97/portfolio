@@ -10,7 +10,7 @@ const About = () => {
             <UserLayout>
                 <Box sx={{ backgroundColor: 'rgba(245, 92, 0, 0.29)' }}>
                     <Box display='flex' justifyContent='center' sx={{ pt: 13 }}>
-                        <Card sx={{ width: 600, backgroundColor: 'rgba(245, 92, 0, 0.1)', pl:1,  }}>
+                        <Card sx={{ width: 600, backgroundColor: 'rgba(245, 92, 0, 0.1)', pl:{xs:0, md:1,sm:1},  }}>
                             <SlideShow width_={700} heigth_={600} images={['https://res.cloudinary.com/dfcqgpkvs/image/upload/v1654373350/goqzjbjtzef562f1vygo.jpg', 'https://res.cloudinary.com/dfcqgpkvs/image/upload/v1654373352/z300wrzo92ipzlzxu7rr.jpg', 'https://res.cloudinary.com/dfcqgpkvs/image/upload/v1654373350/mymgbhay9puepltbmni1.jpg']} />
                         </Card>
                     </Box>
