@@ -54,13 +54,7 @@ export const UserLayout = ({ children }: any) => {
                     <Typography variant='body1' sx={{ color: 'black', display: { xs: 'block', sm: 'none', md: 'none' } }}>Jorge Ochipinti</Typography>
                 </Toolbar>
             </AppBar>
-            <Box display='flex' justifyContent='center' sx={{ display: { xs: 'block', sm: 'none', md: 'none' } }}>
-                {
-                    router.asPath == '/'
-                        ? <Contact />
-                        : null
-                }
-            </Box>
+
             {children}
 
             <Footer />

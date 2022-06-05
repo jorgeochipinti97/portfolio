@@ -18,8 +18,10 @@ const Home: NextPage<Props> = ({ projects, experiences }) => {
 
   return (
     <>
+        <Box sx={{ pt: 10, backgroundColor:'rgba(20, 239, 0, 0.29)' }}/>
       <UserLayout>
-        <Box sx={{ pt: 6, backgroundColor:'rgba(20, 239, 0, 0.29)' }}>
+        
+        <Box>
           <CardIndexType />
         </Box>
         <Box sx={{backgroundColor:'rgba(130, 151, 244, 0.29)'}}>

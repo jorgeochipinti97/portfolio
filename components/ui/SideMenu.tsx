@@ -23,7 +23,7 @@ export const SideMenu = () => {
         <Drawer
             open={isMenuOpen}
             anchor='left'
-            sx={{ backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out',backgroundColor:'rgba(208, 100, 0, 0.9) !important'}}
+            sx={{ backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out'}}
             onClose={toggleSideMenu}
             
         >

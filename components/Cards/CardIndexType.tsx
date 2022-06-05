@@ -20,8 +20,8 @@ export const CardIndexType = () => {
                         </Box>
                     </Box>
                     <Box display='flex' alignSelf='center' sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}>
-                        <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', }}>
-                            <Typography variant='body1' sx={{ m: 1, color: 'white' }} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
+                        <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', }}>
+                            <Typography variant='body1' sx={{ m: 1,}} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
                         </Box>
                     </Box>
                     <Box display='flex' justifyContent='center' sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
