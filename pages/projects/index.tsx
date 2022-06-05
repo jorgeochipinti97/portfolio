@@ -12,7 +12,7 @@ interface Props {
 const Project: NextPage<Props> = ({ projects }) => {
     return (
         <UserLayout>
-            <Box>
+            <Box sx={{pt:10,backgroundColor:'rgba(130, 151, 244, 0.29)'}}>
                 <GridProjects projects={projects}/>
             </Box>
         </UserLayout>

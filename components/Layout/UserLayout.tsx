@@ -16,7 +16,7 @@ export const UserLayout = ({ children }: any) => {
         <Box>
 
             <SideMenu />
-            <AppBar position="static" sx={{ backgroundColor: 'rgba(208, 100, 0, 0.9)', }}>
+            <AppBar position="fixed" >
                 <Toolbar >
 
                     <Box sx={{ display: { xs: 'block', sm: 'none' }, mt: 1 }}
@@ -35,17 +35,17 @@ export const UserLayout = ({ children }: any) => {
                         className="fadeIn">
                         <NextLink href='/' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1 }} color='primary' >Home</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color:router.asPath  == '/' ? 'white': 'black' }} color={router.asPath == '/' ? 'primary' : 'info'} >Home</Button>
                             </Link>
                         </NextLink>
                         <NextLink href='/projects' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1 }} color='primary' >Projects</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1,color:router.asPath  == '/projects' ? 'white': 'black'  }} color={router.asPath == '/projects' ? 'primary' : 'info'} >Projects</Button>
                             </Link>
                         </NextLink>
                         <NextLink href='/about' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1 }} color='primary' >About</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1,color:router.asPath  == '/about' ? 'white': 'black'  }}color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
                             </Link>
                         </NextLink>
                     </Box>

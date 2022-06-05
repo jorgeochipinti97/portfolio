@@ -17,7 +17,7 @@ export const AccordionPage: FC<Props> = ({ title, body }) => {
         <div>
             <Box sx={{ width: '100vw' }} display='flex' justifyContent='center'>
                 <Box sx={{ m: 3 }}>
-                    <Accordion>
+                    <Accordion sx={{backgroundColor:'black', color:'white'}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"

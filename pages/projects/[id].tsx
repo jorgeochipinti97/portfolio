@@ -12,7 +12,7 @@ interface Props {
 const ProjectID: NextPage<Props> = ({ projects }) => {
     return (
         <UserLayout>
-            <Box>
+            <Box sx={{mt:10}}>
                 <CardProject project={projects} />
             </Box>
         </UserLayout>
