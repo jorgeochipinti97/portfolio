@@ -45,7 +45,7 @@ export const CarouselPage: FC<Props> = ({ data }) => {
         >
             {
                 data.map(e => (
-                    <CardProjects project={e} />
+                    <CardProjects key={e.title} project={e} />
                 ))
             }
 

@@ -17,7 +17,7 @@ export const AccordionExperience: FC<Props> = ({ experiences }) => {
                 <Box display='flex' flexDirection='column'>
                     {
                         experiences.map(e => (
-                            <AccordionPage title={e.title} body={e.body} />
+                            <AccordionPage key={e.title} title={e.title} body={e.body} />
                         ))
                     }
                 </Box>

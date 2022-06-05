@@ -39,7 +39,9 @@ const About = () => {
                                     <Grid
                                         item
                                         xs={4}
-                                        sm={4}>
+                                        sm={4}
+                                        key={e}
+                                        >
                                         <Box display='flex' justifyContent='center'>
                                             <Chip label={e} color="primary" sx={{ width: { md: '500px' } }} />
                                         </Box>
