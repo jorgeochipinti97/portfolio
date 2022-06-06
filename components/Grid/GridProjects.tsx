@@ -17,7 +17,7 @@ const GridProjects: FC<Props> = ({ projects }) => {
                 {
                     projects.map(e => (
 
-                        <Box>
+                        <Box key={e.title}>
                             <CardProjects project={e} />
                         </Box>
 
