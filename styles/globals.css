@@ -26,7 +26,8 @@ a{
   border-right: 4px solid;
   width: 39ch;
   
-  animation: typing 2s steps(39), blink .5s infinite step-end alternate;
+  animation: typing 4s steps(39), blink .5s infinite step-end alternate;
+  
   overflow:hidden;
   }
   
