@@ -40,6 +40,7 @@ export const CarouselPage: FC<Props> = ({ data }) => {
             autoPlay={true}
             arrows={false}
             autoPlaySpeed={3000}
+            transitionDuration={800}
 
 
         >
