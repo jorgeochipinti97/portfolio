@@ -17,7 +17,7 @@ export const ProjectsCarousel: FC<Props> = ({ data }) => {
                 setIsLoading(true)
                 clearInterval(timeout)
             }
-        }, 3000);
+        }, 200);
     }, [])
     return (
 

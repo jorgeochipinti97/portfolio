@@ -7,8 +7,8 @@ export const LayoutInternal = ({ children }: any) => {
     return (
         <>
             <Box>
-                <AppBar position="fixed">
-                <Toolbar sx={{ backgroundColor: 'rgba(208, 100, 0, 0.9)' }}>
+                <AppBar position="static">
+                <Toolbar >
                         <Box flexGrow={1}/>
                         <NextLink href='/blogInternal'>
                             <Link sx={{m:1}}>
