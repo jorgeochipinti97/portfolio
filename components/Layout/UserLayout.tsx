@@ -46,6 +46,11 @@ export const UserLayout = ({ children }: any) => {
                                 <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/about' ? 'white' : 'black' }} color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
                             </Link>
                         </NextLink>
+                        <NextLink href='/cv' passHref>
+                            <Link>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/cv' ? 'white' : 'black' }} color={router.asPath == '/cv' ? 'primary' : 'info'} >CV</Button>
+                            </Link>
+                        </NextLink>
                     </Box>
 
                     <Box flex={1} />

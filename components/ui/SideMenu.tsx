@@ -1,11 +1,10 @@
 import { Box, Divider, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader } from "@mui/material"
 import HomeRepairServiceRoundedIcon from '@mui/icons-material/HomeRepairServiceRounded';
-import { SearchOutlined } from "@mui/icons-material";
-import BookRoundedIcon from '@mui/icons-material/BookRounded';
+
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded';
-import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
-import Link from "next/link";
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+
 import { useContext } from "react";
 import { UiContext } from "../../context/ui";
 import { useRouter } from "next/router";
@@ -55,6 +54,13 @@ export const SideMenu = () => {
                             <InfoRoundedIcon />
                         </ListItemIcon>
                         <ListItemText primary={'About'} />
+                    </ListItem>
+                    <ListItem button
+                        onClick={() => navigateTo('/cv')}>
+                        <ListItemIcon>
+                            <AccountBoxIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={'CV'} />
                     </ListItem>
                 </List>
             </Box>
