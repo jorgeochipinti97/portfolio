@@ -22,9 +22,13 @@ export const CardIndexType = () => {
                 isLoading
                     ? <Card sx={{ backgroundColor: 'rgba(20, 239, 0, 0.29)' }}>
                         <CardMedia image='/background-index.png'>
-                            <Box display='flex' justifyContent='center' sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}>
-                                <Image src='/me.png' width={330} height={420} />
+                            <Box display='flex' justifyContent='center'>
+
+                                <Box display='flex' justifyContent='center' sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}>
+                                    <Image src='/me.png' width={330} height={420} />
+                                </Box>
                             </Box>
+
                             <Box display='flex' justifyContent='center'>
                                 <Box display='flex' alignSelf='center' sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
                                     <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', }}>
