@@ -5,10 +5,13 @@ const cv = () => {
     return (
         <>
 
-                    <iframe style={{ width: '100%', height: '800px' }} src="/cv.pdf" >
-                    </iframe>
-            <UserLayout>
-            </UserLayout>
+
+                <UserLayout>
+                    <Box sx={{mt:10}}/>
+            <iframe style={{ width: '100%', height: '800px' }} src="/cv.pdf" >
+            </iframe>
+                </UserLayout>
+
         </>
     )
 }
