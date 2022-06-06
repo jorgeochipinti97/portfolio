@@ -15,6 +15,7 @@ export const SideMenu = () => {
     const { isMenuOpen, toggleSideMenu } = useContext(UiContext)
 
     const navigateTo = (url: string) => {
+        console.log('hola')
         toggleSideMenu();
         router.push(url);
     }
@@ -27,7 +28,7 @@ export const SideMenu = () => {
             onClose={toggleSideMenu}
             
         >
-            <Box sx={{ width: 250, paddingTop: 5 }}>
+            <Box sx={{ width: 250, mt: 10 }}>
 
                 <List>
                     <ListItem button

@@ -10,7 +10,7 @@ import { UiContext } from "../../context/ui";
 
 export const UserLayout = ({ children }: any) => {
     const router = useRouter()
-    const {toggleSideMenu} = useContext(UiContext)
+    const { toggleSideMenu } = useContext(UiContext)
 
     return (
         <Box>
@@ -21,13 +21,11 @@ export const UserLayout = ({ children }: any) => {
 
                     <Box sx={{ display: { xs: 'block', sm: 'none' }, mt: 1 }}
                         className="fadeIn">
-                        <NextLink href='/' passHref>
-                            <Link>
-                                <Button onClick={ toggleSideMenu}>
-                                    <MenuIcon />
-                                </Button>
-                            </Link>
-                        </NextLink>
+                        <Link>
+                            <Button onClick={toggleSideMenu}>
+                                <MenuIcon />
+                            </Button>
+                        </Link>
                     </Box>
                     <Box flex={1} />
 
@@ -35,17 +33,17 @@ export const UserLayout = ({ children }: any) => {
                         className="fadeIn">
                         <NextLink href='/' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color:router.asPath  == '/' ? 'white': 'black' }} color={router.asPath == '/' ? 'primary' : 'info'} >Home</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/' ? 'white' : 'black' }} color={router.asPath == '/' ? 'primary' : 'info'} >Home</Button>
                             </Link>
                         </NextLink>
                         <NextLink href='/projects' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1,color:router.asPath  == '/projects' ? 'white': 'black'  }} color={router.asPath == '/projects' ? 'primary' : 'info'} >Projects</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/projects' ? 'white' : 'black' }} color={router.asPath == '/projects' ? 'primary' : 'info'} >Projects</Button>
                             </Link>
                         </NextLink>
                         <NextLink href='/about' passHref>
                             <Link>
-                                <Button variant='contained' sx={{ fontWeight: 700, m: 1,color:router.asPath  == '/about' ? 'white': 'black'  }}color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
+                                <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/about' ? 'white' : 'black' }} color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
                             </Link>
                         </NextLink>
                     </Box>
