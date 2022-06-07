@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import { GetStaticProps, GetStaticPaths, GetServerSideProps, NextPage } from 'next'
 import { FC, useEffect } from 'react';
 import Carousel from "react-multi-carousel";
@@ -37,16 +38,19 @@ export const CarouselPage: FC<Props> = ({ data }) => {
             itemClass="image-item"
             responsive={responsive}
             infinite
-            autoPlay={false}
-            arrows={true}
+            autoPlay={true}
+            arrows={false}
             autoPlaySpeed={3000}
             transitionDuration={1500}
 
 
         >
+
             {
                 data.map(e => (
-                    <CardProjects key={e.title} project={e} />
+                    <Box display='flex' justifyContent='center'>
+                        <CardProjects key={e.title} project={e} />
+                    </Box>
                 ))
             }
 
