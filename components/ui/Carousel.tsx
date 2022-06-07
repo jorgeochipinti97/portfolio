@@ -48,8 +48,8 @@ export const CarouselPage: FC<Props> = ({ data }) => {
 
             {
                 data.map(e => (
-                    <Box display='flex' justifyContent='center'>
-                        <CardProjects key={e.title} project={e} />
+                    <Box display='flex' key={e.title} justifyContent='center'>
+                        <CardProjects  project={e} />
                     </Box>
                 ))
             }
