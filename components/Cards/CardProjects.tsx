@@ -3,7 +3,7 @@ import NextLink from "next/link"
 import { FC } from "react"
 import { IProject } from "../../interfaces"
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { SlideShow } from "../ui";
+import { SliderFade, SlideShow } from "../ui";
 
 interface Props {
     project: IProject,
@@ -12,7 +12,8 @@ interface Props {
 export const CardProjects: FC<Props> = ({ project }) => {
     return (
         <Card sx={{ m: 4, width: { xs: 300, md: 400 }, height: { xs: 600, md: 600 } }}>
-            <SlideShow images={project.image} />
+            <SliderFade images={project.image} />
+            {/* <SlideShow images={project.image} /> */}
             <Box display='flex' justifyContent='center'>
                 <Typography variant='subtitle1'>{project.title}</Typography>
             </Box>
