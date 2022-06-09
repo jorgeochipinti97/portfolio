@@ -15,19 +15,19 @@ interface Props {
 export const AccordionPage: FC<Props> = ({ title, body }) => {
     return (
         <div>
-            <Box sx={{ width: '100vw' }} display='flex' justifyContent='center'>
+            <Box sx={{ width: '100%' }} display='flex' justifyContent='center'>
                 <Box sx={{ m: 3 }}>
-                    <Accordion sx={{backgroundColor:'black', color:'white'}}>
+                    <Accordion sx={{backgroundColor:'white', color:'white'}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                                <Typography variant='h6' sx={{fontWeigth:700}}>{title}</Typography>
+                                <Typography variant='h6' sx={{fontWeigth:700,color:'black'}}>{title}</Typography>
       
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography align='justify' variant='body1' sx={{ m: 4 }}>
+                            <Typography align='justify' variant='body1' sx={{ m: 4,color:'black' }}>
                                 {body}
                             </Typography>
                         </AccordionDetails>

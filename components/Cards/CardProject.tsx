@@ -44,7 +44,7 @@ export const CardProject: FC<Props> = ({ project }) => {
                     </Box>
                 </Card>
             </Box>
-            <Box display='flex' justifyContent='center' sx={{ mt: 8, flexWrap: 'wrap' }}>
+            {/* <Box display='flex' justifyContent='center' sx={{ mt: 8, flexWrap: 'wrap' }}>
                 {project.tags.map(tag => (
                     <Chip
                         key={tag}
@@ -54,7 +54,7 @@ export const CardProject: FC<Props> = ({ project }) => {
                         sx={{ ml: 1, mt: 1 }}
                     />
                 ))}
-            </Box>
+            </Box> */}
 
         </>
     )

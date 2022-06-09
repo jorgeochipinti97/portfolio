@@ -21,15 +21,13 @@ const Home: NextPage<Props> = ({ projects, experiences }) => {
   return (
     <>
       <UserLayout>
-        <Box sx={{ pt: 10, backgroundColor: 'rgba(20, 239, 0, 0.29)' }} />
-
-        <Box>
+        <Box sx={{pt:4}}>
           <CardIndexType />
         </Box>
-        <Box sx={{ backgroundColor: 'rgba(130, 151, 244, 0.29)' }}>
+        <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
           <ProjectsCarousel data={projects} />
         </Box>
-        <Box sx={{ pt: 5, backgroundColor: 'rgba(245, 92, 0, 0.29)' }}>
+        <Box sx={{ pt: 5, backgroundColor: 'rgba(0, 0, 0, 1)' }}>
 
           <AccordionExperience experiences={experiences} />
         </Box>

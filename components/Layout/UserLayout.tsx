@@ -39,22 +39,22 @@ export const UserLayout = ({ children }: any) => {
                             className="fadeIn">
                             <NextLink href='/' passHref>
                                 <Link>
-                                    <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/' ? 'white' : 'black' }} color={router.asPath == '/' ? 'primary' : 'info'} >Home</Button>
+                                    <Button variant='contained' sx={{ fontWeight: 400, m: 1, color: router.asPath == '/' ? 'white' : 'black' }} color={router.asPath == '/' ? 'primary' : 'info'} >Home</Button>
                                 </Link>
                             </NextLink>
                             <NextLink href='/projects' passHref>
                                 <Link>
-                                    <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/projects' ? 'white' : 'black' }} color={router.asPath == '/projects' ? 'primary' : 'info'} >Projects</Button>
+                                    <Button variant='contained' sx={{ fontWeight: 400, m: 1, color: router.asPath == '/projects' ? 'white' : 'black' }} color={router.asPath == '/projects' ? 'primary' : 'info'} >Projects</Button>
                                 </Link>
                             </NextLink>
                             <NextLink href='/about' passHref>
                                 <Link>
-                                    <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/about' ? 'white' : 'black' }} color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
+                                    <Button variant='contained' sx={{ fontWeight: 400, m: 1, color: router.asPath == '/about' ? 'white' : 'black' }} color={router.asPath == '/about' ? 'primary' : 'info'} >About</Button>
                                 </Link>
                             </NextLink>
                             <NextLink href='/cv' passHref>
                                 <Link>
-                                    <Button variant='contained' sx={{ fontWeight: 700, m: 1, color: router.asPath == '/cv' ? 'white' : 'black' }} color={router.asPath == '/cv' ? 'primary' : 'info'} >CV</Button>
+                                    <Button variant='contained' sx={{ fontWeight: 400, m: 1, color: router.asPath == '/cv' ? 'white' : 'black' }} color={router.asPath == '/cv' ? 'primary' : 'info'} >CV</Button>
                                 </Link>
                             </NextLink>
                         </Box>

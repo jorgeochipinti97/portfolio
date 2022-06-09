@@ -11,7 +11,7 @@ export const AccordionExperience: FC<Props> = ({ experiences }) => {
     return (
         <>
             <Box display='flex' justifyContent='center'>
-                <Typography variant='h4' sx={{ m: 4, fontFamily: 'Bree Serif' }}>Experience</Typography>
+                <Typography variant='h4' sx={{ m: 4, fontFamily: 'Bree Serif',color:'aliceblue' }}>Experience</Typography>
             </Box>
             <Box display='flex' justifyContent='center'>
                 <Box display='flex' flexDirection='column'>

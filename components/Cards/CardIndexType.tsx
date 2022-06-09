@@ -20,7 +20,7 @@ export const CardIndexType = () => {
         <>
             {
                 isLoading
-                    ? <Card sx={{ backgroundColor: 'rgba(20, 239, 0, 0.29)' }}>
+                    ? <Card sx={{ backgroundColor: 'rgba(0, 0, 0, 1)',borderRadius:0 }}>
                         <CardMedia image='/background-index.png'>
                             <Box display='flex' justifyContent='center'>
 
@@ -32,7 +32,7 @@ export const CardIndexType = () => {
                             <Box display='flex' justifyContent='center'>
                                 <Box display='flex' alignSelf='center' sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
                                     <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', }}>
-                                        <Typography variant='h4' sx={{ m: 1 }} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
+                                        <Typography variant='h4' sx={{ m: 1, color:'aliceblue' }} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
                                     </Box>
                                     <Box >
                                         <Contact />
@@ -40,7 +40,7 @@ export const CardIndexType = () => {
                                 </Box>
                                 <Box display='flex' alignSelf='center' sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}>
                                     <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', }}>
-                                        <Typography variant='body1' sx={{ m: 1, }} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
+                                        <Typography variant='body1' sx={{ m: 1,color:'aliceblue' }} className='typeWriter'>Hi! I m Jorge Ochipinti. Thanks for visit my web!</Typography>
                                     </Box>
                                 </Box>
                                 <Box display='flex' justifyContent='center' sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
@@ -50,7 +50,7 @@ export const CardIndexType = () => {
                         </CardMedia>
                     </Card>
                     :
-                    <Card sx={{ backgroundColor: 'rgba(20, 239, 0, 0.29)' }}>
+                    <Card sx={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
                         <FullScreenLoading />
                     </Card>
             }

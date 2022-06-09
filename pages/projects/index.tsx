@@ -27,7 +27,7 @@ const Project: NextPage<Props> = ({ projects }) => {
 
     return (
         <UserLayout>
-            <Box sx={{ pt: 10, backgroundColor: 'rgba(130, 151, 244, 0.29)' }}>
+            <Box sx={{ pt: 10, backgroundColor: 'rgba(0, 0, 0, 1)' }}>
                 {isLoading
                     ? <GridProjects projects={projects} />
                     : <FullScreenLoading />

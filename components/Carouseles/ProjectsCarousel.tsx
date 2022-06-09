@@ -28,7 +28,7 @@ export const ProjectsCarousel: FC<Props> = ({ data }) => {
                     ? (
                         <>
                             <Box display='flex' justifyContent='center'>
-                                <Typography variant='h4' sx={{ m: 4, fontFamily: 'Bree Serif' }}>Projects</Typography>
+                                <Typography variant='h4' sx={{ m: 4, fontFamily: 'Bree Serif',color:'aliceblue' }}>Projects</Typography>
                             </Box>
                             <CarouselPage data={data} />
                         </>

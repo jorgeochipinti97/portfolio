@@ -16,7 +16,7 @@ export const SliderFade: FC<Props> = ({ images, heigth, width }) => {
     return (
         <div className="slide-container">
             <Fade
-            duration={1000}
+            duration={5000}
             arrows={false}
             indicators={true}
             >
