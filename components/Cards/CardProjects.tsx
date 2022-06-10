@@ -19,7 +19,7 @@ export const CardProjects: FC<Props> = ({ project }) => {
             </Box>
             <Box display='flex' justifyContent='center'>
                 <Box display='flex' justifyContent='center' sx={{ m: 2 }} >
-                    <Typography align="center" variant='body1' sx={{ display: { xs: 'block', md: 'block' } }}>{project.description.slice(0, 200)}...</Typography>
+                    <Typography align="center" variant='body1' sx={{ display: { xs: 'block', md: 'block' } }}>{project.description.slice(0, 100)}...</Typography>
                 </Box>
             </Box>
             <Box display='flex' justifyContent='center' >
